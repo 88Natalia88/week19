@@ -24,7 +24,7 @@ body{
     font-size: 18px;
     border-radius: 3px;
 }
-.post-header{
+.post-topic{
     font-style: italic; 
     padding: 30px 0 30px 0;
 }
@@ -32,4 +32,15 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.post-result{
+    margin-top: 50px;
+}
+#topic{
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+#text-result{
+    font-size: 1.2em;
+    margin-bottom: 20px;
 }

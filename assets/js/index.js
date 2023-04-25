@@ -12,10 +12,16 @@ btn.onclick = function(){
         }
     })
     .then(response => response.json())
-    .then(json => {
-        //console.log(json.title);
-        document.getElementById("topic").innerText += json.title;
-        document.getElementById("text-result").innerText += json.body;
+    .then(posts => {
+        //console.log(posts);
+        document.getElementById("topic").innerText += posts.title;
+        document.getElementById("text-result").innerText += posts.body;
+        cleanInput();
     })
-    .catch(error => document.getElementById("text-result").innerText += error);
+    .catch(error => document.getElementById("text-result").innerText += error)
+}
+
+function cleanInput(){
+    document.getElementById('text-topic').value = '';
+    document.getElementById('text').value = '';
 }

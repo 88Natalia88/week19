@@ -1,4 +1,5 @@
 const btn = document.getElementById('btn');
+let postResult = document.querySelector('.post-result');
 
 btn.onclick = function(){
     fetch("https://jsonplaceholder.typicode.com/posts", {
@@ -12,13 +13,15 @@ btn.onclick = function(){
         }
     })
     .then(response => response.json())
-    .then(posts => {
-        //console.log(posts);
-        document.getElementById("topic").innerText += posts.title;
-        document.getElementById("text-result").innerText += posts.body;
-        cleanInput();
+    .then(post => {
+        //console.log(post);
+            let postHtml = '';
+            postHtml = `<p class="topic">${post.title}</p>
+            <p class="text-result">${post.body}</p>`;
+            postResult.innerHTML += postHtml;
+            cleanInput();
     })
-    .catch(error => document.getElementById("text-result").innerText += error)
+    .catch(error => postResult.textContent += error)
 }
 
 function cleanInput(){

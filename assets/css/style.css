@@ -36,11 +36,11 @@ body{
 .post-result{
     margin-top: 50px;
 }
-#topic{
+.topic{
     font-size: 3em;
     margin-bottom: 20px;
 }
-#text-result{
+.text-result{
     font-size: 1.2em;
     margin-bottom: 20px;
 }

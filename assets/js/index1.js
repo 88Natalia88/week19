@@ -1,4 +1,5 @@
 let headers = document.getElementById('headers');
+
 document.addEventListener("DOMContentLoaded", function (e){
     fetch("https://jsonplaceholder.typicode.com/posts")
     .then(response => response.json())

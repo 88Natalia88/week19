@@ -13,3 +13,13 @@
     align-items: center;
     justify-content: center;
 }
+.page_one{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+}
+.page_one a{
+    text-decoration: underline #c6c3b9;
+    font-size: 1.2em;
+    color: black;
+}

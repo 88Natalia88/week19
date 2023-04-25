@@ -44,3 +44,13 @@ body{
     font-size: 1.2em;
     margin-bottom: 20px;
 }
+.page_two{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+}
+.page_two a{
+    text-decoration: underline #c6c3b9;
+    font-size: 1.2em;
+    color: black;
+}
